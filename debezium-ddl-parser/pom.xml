@@ -50,6 +50,14 @@
             <artifactId>assertj-core</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.debezium/debezium-ddl-parser -->
+        <dependency>
+            <groupId>io.debezium</groupId>
+            <artifactId>debezium-ddl-parser</artifactId>
+            <version>2.6.1.Final</version>
+        </dependency>
+
     </dependencies>
     <properties>
         <antlr.source.directory>${project.basedir}/src/main/antlr4</antlr.source.directory>
