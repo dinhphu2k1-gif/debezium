@@ -23,6 +23,7 @@ public class ConnectionIT implements Testing {
 
         Configuration config = TestHelper.testConfig().with("database.query.timeout.ms", "1000").build();
 
+
         try (OracleConnection conn = TestHelper.testConnection(config)) {
             conn.connect();
             TestHelper.dropTable(conn, "debezium.customer");
